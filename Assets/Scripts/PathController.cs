@@ -9,6 +9,11 @@ public class PathController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        Init();
+    }
+
+    public void Init()
+    {
         nodes = new Transform[transform.childCount];
 
         for (int i = 0; i < transform.childCount; i++)
